@@ -274,7 +274,7 @@ OpenOBC::OpenOBC() : displayMode(reinterpret_cast<volatile DisplayMode_Type&>(LP
 	ObcBootupText::mode mode;
 	std::string bootupTextMode = config->getValueByNameWithDefault("BootupTextMode", "GitHash");
 	std::string bootupText;
-	std::string customBootupText = config->getValueByNameWithDefault("CustomBootupText", "openOBC");
+	std::string customBootupText = config->getValueByNameWithDefault("Heroes", "openOBC");
 	uint bootupDelay = atoi(config->getValueByNameWithDefault("BootupDelay", "800").c_str());
 	if(bootupTextMode == "GitHash")
 	{
